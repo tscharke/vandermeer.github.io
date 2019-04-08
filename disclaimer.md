@@ -1,6 +1,7 @@
 ---
 layout: imprint
 permalink: /disclaimer.html
+visibility: hidden
 ---
 
 # Haftung für Inhalte

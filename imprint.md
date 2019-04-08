@@ -1,6 +1,7 @@
 ---
 layout: imprint
 permalink: /imprint.html
+visibility: hidden
 ---
 
 # Impressum

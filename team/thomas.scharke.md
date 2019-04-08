@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Team
+visibility: visible
 
 member: "Thomas Scharke"
 mainRole: "Software Artist"
