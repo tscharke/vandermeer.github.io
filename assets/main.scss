@@ -1,0 +1,312 @@
+---
+---
+
+@import "fonts";
+@import "methods";
+@import "properties";
+
+$PADDING: 0.875rem;
+$BACKGROUND_COLOR: $COLOR_GRAY_DARK;
+$TEXT_COLOR: $COLOR_WHITE;
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: 16px;
+  font-family: 'vdmFont', open-sans, sans-serif;
+  font-weight: normal;
+}
+
+.site-header {
+  border: none;
+  display: flex;
+  flex: 1;
+  background-color: $BACKGROUND_COLOR;
+  align-items: center;
+  justify-content: flex-end;
+  line-height: 3rem;
+  padding-left: $PADDING;
+  padding-right: $PADDING;
+  @include shadow(0px, 0px, 20px, 10px, $BACKGROUND_COLOR);
+  
+  ul {
+    font-size: 1.125rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+a {
+  color: $COLOR_WHITE;
+  
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $COLOR_WHITE;
+    text-decoration: none;
+  }
+}
+
+.page-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background: $COLOR_GRAY_LIGHT none;
+}
+
+.site-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  
+  .site-content-top {
+    display: flex;
+    flex: 1;
+    height: 50%;
+    align-items: flex-end;
+    justify-content: center;
+    
+    img {
+      max-width: 90%;
+      max-height: 100%;
+      
+    }
+  }
+  
+  .site-content-bottom {
+    height: 50%;
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: center;
+    
+    h1 {
+      padding-top: $PADDING;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      margin: 0;
+      color: $COLOR_RED;
+      font-size: 1.5rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      line-height: 2rem;
+      text-align: center;
+      
+      span {
+        &:after {
+          content: '_';
+          display: inline-block;
+          @include animationWith(1.1s);
+        }
+      }
+    }
+  }
+  
+  &.team {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+  
+    .member {
+      flex-direction: column;
+      display: flex;
+      flex: 1;
+      justify-content: flex-start;
+      align-items: center;
+      
+      h1 {
+        display: flex;
+        margin: 0;
+        color: $COLOR_RED;
+        font-size: 1.75rem;
+        text-align: center;
+      }
+    }
+    
+    .avatar {
+      margin-top: $PADDING;
+      margin-bottom: $PADDING;
+      display: flex;
+      flex-direction: column;
+      
+      img {
+        vertical-align: middle;
+        border-style: none;
+        border-radius: 125px;
+        width: 250px;
+        max-width: 250px;
+        margin: auto;
+      }
+    }
+    
+    .skills {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      
+      h3 {
+        font-size: 20px;
+        margin: 0;
+      }
+      
+      ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: .625rem 0 0;
+        padding: 0;
+        
+        li {
+          color: $COLOR_GRAY_DARK;
+          font-weight: 600;
+          font-size: 1.25rem;
+          letter-spacing: 1px;
+          text-align: center;
+          margin-top: 3px;
+          margin-bottom: 3px;
+          
+          &:first-child {
+            margin-top: 0;
+          }
+          
+          &:last-child {
+            margin-bottom: 0;
+          }
+          
+          em {
+            color: $COLOR_RED;
+            font-size: .875rem;
+            letter-spacing: 0;
+          }
+          
+          strong {
+            font-size: 14px;
+            letter-spacing: 0;
+          }
+        }
+      }
+    }
+    
+    .details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: $PADDING;
+      margin-bottom: $PADDING;
+      
+      .main-role {
+        margin: 0;
+        text-align: center;
+        font-size: 1.5rem;
+        color: $COLOR_BLACK;
+        font-weight: 900;
+        letter-spacing: 2px;
+      }
+      
+      .role {
+        margin: 0;
+        text-align: center;
+        font-size: 1.25rem;
+        color: $COLOR_BLACK;
+        font-weight: 900;
+        letter-spacing: 2px;
+      }
+      
+      .experience {
+        width: 70%;
+        color: $COLOR_GRAY;
+        letter-spacing: -1px;
+        text-align: center;
+        font-size: 1.25rem;
+      }
+      
+      aside {
+        font-family: 'fontello';
+        margin-top: $PADDING;
+        margin-bottom: $PADDING;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        
+        ul {
+          flex: 1;
+          display: flex;
+          flex-direction: row;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          align-items: center;
+          justify-content: space-between;
+        }
+        
+        a {
+          color: $COLOR_RED;
+          font-size: 3.125rem;
+          
+          &:link,
+          &:visited,
+          &:hover,
+          &:active {
+            color: $COLOR_RED;
+            text-decoration: none;
+          }
+          
+          &.github:after {
+            content: "\f300";
+          }
+          
+          &.linkedin:after {
+            content: "\f30c";
+          }
+          
+          &.twitter:after {
+            content: "\f304";
+          }
+          
+          &.others:after {
+            content: "\f0c8";
+          }
+        }
+      }
+      
+      .description {
+        font-size: 1rem;
+        color: $COLOR_GRAY_LIGHT;
+        text-shadow: $COLOR_GRAY_DARK 1px 1px;
+        line-height: 1.25rem;
+        margin-top: $PADDING;
+        margin-bottom: $PADDING;
+        text-align: center;
+      }
+      
+      .contact {
+        color: $COLOR_RED;
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        margin-top: $PADDING;
+        margin-bottom: $PADDING;
+  
+        a {
+          &:link,
+          &:visited,
+          &:hover,
+          &:active {
+            color: $COLOR_RED;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<div class="site-content team">
+  <section class="member">
+    <div class="avatar">
+      <img src="thomasScharke.png" alt="Thomas Scharke">
+    </div>
+    <h1>{{ page.member }}</h1>
+    <section class="details">
+      <h2 class="main-role">{{ page.mainRole }}</h2>
+      <h3 class="role">{{ page.role }}</h3>
+      <aside>
+        <ul>
+          {%- for socialLink in page.social -%}
+            {%- for l in socialLink -%}
+              <li>
+                <a href="{{ l[1] }}" target="_blank" class="{{ l[0] }}" rel="noopener noreferrer"></a>
+              </li>
+            {%- endfor -%}
+          {%- endfor -%}
+        </ul>
+      </aside>
+      <h3 class="experience ">{{ page.experience }}</h3>
+      <div class="description">{{ page.description }}</div>
+      <div class="contact">
+        <a class="" href="mailto:{{ page.contact }}">{{ page.contact }}</a>
+      </div>
+    </section>
+    <section class="skills">
+      {{ content }}
+    </section>
+  </section>
+</div>
