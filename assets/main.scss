@@ -64,7 +64,7 @@ a {
   flex: 1;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  height: calc(100vh - 3rem);
   
   .site-content-top {
     display: flex;
