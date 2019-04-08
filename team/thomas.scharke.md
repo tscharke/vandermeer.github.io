@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Team
-# permalink: /team/
 
 member: "Thomas Scharke"
 mainRole: "Software Artist"

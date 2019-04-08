@@ -1,0 +1,6 @@
+User-agent: *
+Sitemap: https://van.dermeer.de/sitemap.xml
+Allow: /
+Disallow: /disclaimer.html
+Disallow: /imprint.html
+Disallow: /assets/fonts/

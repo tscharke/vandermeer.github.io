@@ -57,6 +57,28 @@ a {
   flex: 1;
   flex-direction: column;
   background: $COLOR_GRAY_LIGHT none;
+  
+  &.imprint {
+    padding-left: $PADDING;
+    padding-right: $PADDING;
+    height: calc(100% - 3rem);
+    font-size: .75rem;
+    
+    h1, h2, h3 {
+      padding: 0;
+      margin: 0;
+    }
+    
+    p {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    table {
+      margin-top: $PADDING;
+      margin-bottom: $PADDING;
+    }
+  }
 }
 
 .site-content {
