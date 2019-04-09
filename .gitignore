@@ -4,4 +4,3 @@ _site
 *.iml
 .idea
 node_modules
-/assets/vandermeer.js
