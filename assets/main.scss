@@ -59,9 +59,10 @@ a {
   background: $COLOR_GRAY_LIGHT none;
   padding-left: $PADDING;
   padding-right: $PADDING;
+  height: calc(100vh - 3rem);
+  min-height: calc(100vh - 3rem);
   
   &.imprint {
-    height: calc(100% - 3rem);
     font-size: .75rem;
     
     h1, h2, h3 {
@@ -87,6 +88,7 @@ a {
   flex-direction: column;
   justify-content: center;
   height: calc(100vh - 3rem);
+  min-height: calc(100vh - 3rem);
   
   .site-content-top {
     display: flex;
