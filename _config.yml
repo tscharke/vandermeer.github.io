@@ -16,6 +16,14 @@ exclude:
   - vdm-home.iml
   - Gemfile
   - Gemfile.lock
+  - CNAME
+  - package.json
+  - node_modules
+  - src
+  - feed.xml
+  - tsconfig.json
+  - webpack.config.js
+  - yarn.lock
 
 sass:
   sass_dir: _saas

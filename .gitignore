@@ -3,3 +3,5 @@ _site
 .jekyll-metadata
 *.iml
 .idea
+node_modules
+/assets/vandermeer.js

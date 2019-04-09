@@ -90,15 +90,13 @@ a {
   
   .site-content-top {
     display: flex;
-    flex: 1;
-    height: 50%;
+    height: calc(50% - 3rem);
     align-items: flex-end;
     justify-content: center;
     
     img {
       max-width: 90%;
       max-height: 100%;
-      
     }
   }
   
