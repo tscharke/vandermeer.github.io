@@ -1,6 +1,5 @@
 ---
-layout: imprint
-permalink: /disclaimer
+permalink: /lesehelden/haftungsausschluss
 visibility: hidden
 ---
 

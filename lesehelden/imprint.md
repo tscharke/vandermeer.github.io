@@ -1,6 +1,5 @@
 ---
-layout: imprint
-permalink: /imprint
+permalink: /lesehelden/impressum
 visibility: hidden
 ---
 
