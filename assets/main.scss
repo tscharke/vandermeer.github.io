@@ -62,23 +62,43 @@ a {
   
   &.imprint {
     font-size: .75rem;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
+    font-family: 'vdmFont', open-sans, sans-serif;
+    font-weight: normal;
     
-    h1, h2, h3 {
+    h1, h2 {
       padding: 0;
       margin: 0;
     }
-    
+
     p {
       display: flex;
       flex-direction: column;
+      
+      strong {
+        font-size: .85rem;
+        line-height: 1.25rem
+      }
     }
     
     table {
       margin-top: $PADDING;
       margin-bottom: $PADDING;
     }
-  }
+
+    a {
+      color: $COLOR_RED;
+      
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        color: $COLOR_RED;
+        text-decoration: none;
+      }
+    }
+      }
 }
 
 .site-content {
