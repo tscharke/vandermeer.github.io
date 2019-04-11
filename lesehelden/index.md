@@ -1,4 +1,5 @@
 ---
+layout: imprint
 ---
 
 Under construction

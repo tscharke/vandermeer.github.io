@@ -1,4 +1,5 @@
 ---
+layout: imprint
 permalink: /lesehelden/haftungsausschluss
 visibility: hidden
 ---

@@ -1,4 +1,5 @@
 ---
+layout: imprint
 permalink: /lesehelden/impressum
 visibility: hidden
 ---
