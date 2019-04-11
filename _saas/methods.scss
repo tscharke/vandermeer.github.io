@@ -5,25 +5,5 @@
   $spreadRadius,
   $color
 ) {
-  //-moz-box-shadow: $horizontalOffset $verticalsOffset $blurRadius $spreadRadius
-  //$color;
-  //-webkit-box-shadow: $horizontalOffset $verticalsOffset $blurRadius
-  //$spreadRadius $color;
   box-shadow: $horizontalOffset $verticalsOffset $blurRadius $spreadRadius $color;
-}
-
-@keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-@-webkit-keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-
-@mixin animationWith($timeInSeconds) {
-  animation: blink-animation $timeInSeconds steps(5, start) infinite;
-  -webkit-animation: blink-animation $timeInSeconds steps(5, start) infinite;
 }

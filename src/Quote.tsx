@@ -101,10 +101,6 @@ export default class Quote extends React.Component<IProperties, IState> {
       ? message.substring(0, cursorPosition)
       : ALL_QUOTES[0]
 
-    return (
-      <h1 className="quotes">
-        <span>{messageToDisplay}</span>
-      </h1>
-    )
+    return messageToDisplay
   }
 }
