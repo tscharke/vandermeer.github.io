@@ -132,7 +132,13 @@ a {
     padding-right: 2rem;
     
     h1 {
+      // fix for iPhone X/XS/XR
+      &:before {
+        content: '';
+      }
+      
       height: 10rem;
+      min-height: 10rem;
       flex-wrap: wrap;
       word-break: break-word;
       margin: 0;
