@@ -3,7 +3,6 @@ import { ALL_QUOTES, createObservable } from './helper'
 
 interface IProperties {
   delayAfterQuote: number
-  delayAfterCharacter: number
 }
 
 const Quote = ({ delayAfterQuote }: IProperties) => {
