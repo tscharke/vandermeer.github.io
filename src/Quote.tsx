@@ -9,7 +9,7 @@ const Quote = ({ delayAfterQuote }: IProperties) => {
   const [message, setMessage] = React.useState(ALL_QUOTES[0])
 
   React.useEffect(() => {
-    const observable = createObservable(delayAfterQuote)
+    const observable = createObservable(delayAfterQuote, ALL_QUOTES.length)
     const subscriber = observable.subscribe((index: number) =>
       setMessage(ALL_QUOTES[index]),
     )
