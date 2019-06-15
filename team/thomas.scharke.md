@@ -17,15 +17,16 @@ description: "Passionate implementer of ideas preferably with TypeScript, JavaSc
 contact: "scharke@van.dermeer.de"
 ---
 ### Tech & Skills
-* TypeScript *(3+ years)*
-* JavaScript *(6+ years)*
-* ReactNative *(4+ years)*
-* React *(4+ years)*
-* Redux *(4+ years)*
-* Node *(2+ years)*
-* HTML, (S)CSS *(10+ years)*
-* Java *(15+ years)*
-* Objective-C *(2+ years)*
+* TypeScript
+* JavaScript
+* React
+* React Native
+* Redux
+* Node
+* HTML
+* (S)CSS
+* Java
+* Objective-C
 * Test Driven Development
 * Agile methods **(Kanban, Scrum)**
 * Domain Driven Design
