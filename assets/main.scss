@@ -57,8 +57,8 @@ a {
   flex: 1;
   flex-direction: column;
   background: $COLOR_GRAY_LIGHT none;
-  padding-left: $PADDING;
-  padding-right: $PADDING;
+  // padding-left: $PADDING;
+  // padding-right: $PADDING;
   
   &.imprint {
     font-size: .75rem;
