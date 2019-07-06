@@ -1,9 +1,9 @@
 ---
 ---
 
-@import "fonts";
-@import "methods";
-@import "properties";
+@import 'fonts';
+@import 'methods';
+@import 'properties';
 
 $PADDING: 0.875rem;
 $BACKGROUND_COLOR: $COLOR_GRAY_DARK;
@@ -31,7 +31,7 @@ body {
   padding-left: $PADDING;
   padding-right: $PADDING;
   @include shadow(0px, 0px, 20px, 10px, $BACKGROUND_COLOR);
-  
+
   ul {
     font-size: 1.125rem;
     list-style: none;
@@ -42,7 +42,7 @@ body {
 
 a {
   color: $COLOR_WHITE;
-  
+
   &:link,
   &:visited,
   &:hover,
@@ -59,15 +59,16 @@ a {
   background: $COLOR_GRAY_LIGHT none;
   // padding-left: $PADDING;
   // padding-right: $PADDING;
-  
+
   &.imprint {
-    font-size: .75rem;
+    font-size: 0.75rem;
     height: 100%;
     min-height: 100vh;
     font-family: 'vdmFont', open-sans, sans-serif;
     font-weight: normal;
-    
-    h1, h2 {
+
+    h1,
+    h2 {
       padding: 0;
       margin: 0;
     }
@@ -75,13 +76,13 @@ a {
     p {
       display: flex;
       flex-direction: column;
-      
+
       strong {
-        font-size: .85rem;
-        line-height: 1.25rem
+        font-size: 0.85rem;
+        line-height: 1.25rem;
       }
     }
-    
+
     table {
       margin-top: $PADDING;
       margin-bottom: $PADDING;
@@ -89,7 +90,7 @@ a {
 
     a {
       color: $COLOR_RED;
-      
+
       &:link,
       &:visited,
       &:hover,
@@ -98,7 +99,7 @@ a {
         text-decoration: none;
       }
     }
-      }
+  }
 }
 
 .site-content {
@@ -108,19 +109,23 @@ a {
   justify-content: center;
   height: calc(100vh - 3rem);
   min-height: calc(100vh - 3rem);
-  
+
   .site-content-top {
     display: flex;
     height: calc(50% - 3rem);
     align-items: flex-end;
     justify-content: center;
-    
+
+    picture {
+      text-align: center;
+    }
+
     img {
       max-width: 90%;
       max-height: 100%;
     }
   }
-  
+
   .site-content-bottom {
     height: 50%;
     display: flex;
@@ -130,13 +135,13 @@ a {
     padding-top: $PADDING;
     padding-left: 2rem;
     padding-right: 2rem;
-    
+
     h1 {
       // fix for iPhone X/XS/XR
       &:before {
         content: '';
       }
-      
+
       height: 10rem;
       min-height: 10rem;
       flex-wrap: wrap;
@@ -150,21 +155,21 @@ a {
       min-width: 100%;
     }
   }
-  
+
   &.team {
     display: flex;
     flex: 1;
     justify-content: flex-start;
     align-items: center;
     height: 100%;
-  
+
     .member {
       flex-direction: column;
       display: flex;
       flex: 1;
       justify-content: flex-start;
       align-items: center;
-      
+
       h1 {
         display: flex;
         margin: 0;
@@ -173,13 +178,13 @@ a {
         text-align: center;
       }
     }
-    
+
     .avatar {
       margin-top: $PADDING;
       margin-bottom: $PADDING;
       display: flex;
       flex-direction: column;
-      
+
       img {
         vertical-align: middle;
         border-style: none;
@@ -189,26 +194,26 @@ a {
         margin: auto;
       }
     }
-    
+
     .skills {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       align-content: center;
-      
+
       h3 {
         font-size: 20px;
         margin: 0;
       }
-      
+
       ul {
         display: flex;
         flex-direction: column;
         list-style: none;
-        margin: .625rem 0 0;
+        margin: 0.625rem 0 0;
         padding: 0;
-        
+
         li {
           color: $COLOR_GRAY_DARK;
           font-weight: 600;
@@ -217,21 +222,21 @@ a {
           text-align: center;
           margin-top: 3px;
           margin-bottom: 3px;
-          
+
           &:first-child {
             margin-top: 0;
           }
-          
+
           &:last-child {
             margin-bottom: 0;
           }
-          
+
           em {
             color: $COLOR_RED;
-            font-size: .875rem;
+            font-size: 0.875rem;
             letter-spacing: 0;
           }
-          
+
           strong {
             font-size: 14px;
             letter-spacing: 0;
@@ -239,14 +244,14 @@ a {
         }
       }
     }
-    
+
     .details {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: $PADDING;
       margin-bottom: $PADDING;
-      
+
       .main-role {
         margin: 0;
         text-align: center;
@@ -255,7 +260,7 @@ a {
         font-weight: 900;
         letter-spacing: 2px;
       }
-      
+
       .role {
         margin: 0;
         text-align: center;
@@ -264,7 +269,7 @@ a {
         font-weight: 900;
         letter-spacing: 2px;
       }
-      
+
       .experience {
         width: 70%;
         color: $COLOR_GRAY;
@@ -272,7 +277,7 @@ a {
         text-align: center;
         font-size: 1.25rem;
       }
-      
+
       aside {
         font-family: 'fontello';
         margin-top: $PADDING;
@@ -280,7 +285,7 @@ a {
         display: flex;
         flex-direction: row;
         width: 80%;
-        
+
         ul {
           flex: 1;
           display: flex;
@@ -291,11 +296,11 @@ a {
           align-items: center;
           justify-content: space-between;
         }
-        
+
         a {
           color: $COLOR_RED;
           font-size: 3.125rem;
-          
+
           &:link,
           &:visited,
           &:hover,
@@ -303,25 +308,25 @@ a {
             color: $COLOR_RED;
             text-decoration: none;
           }
-          
+
           &.github:after {
-            content: "\f300";
+            content: '\f300';
           }
-          
+
           &.linkedin:after {
-            content: "\f30c";
+            content: '\f30c';
           }
-          
+
           &.twitter:after {
-            content: "\f304";
+            content: '\f304';
           }
-          
+
           &.others:after {
-            content: "\f0c8";
+            content: '\f0c8';
           }
         }
       }
-      
+
       .description {
         font-size: 1rem;
         color: $COLOR_GRAY_LIGHT;
@@ -331,14 +336,14 @@ a {
         margin-bottom: $PADDING;
         text-align: center;
       }
-      
+
       .contact {
         color: $COLOR_RED;
         font-size: 1.5rem;
         letter-spacing: 0;
         margin-top: $PADDING;
         margin-bottom: $PADDING;
-  
+
         a {
           &:link,
           &:visited,
