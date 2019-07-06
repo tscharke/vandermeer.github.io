@@ -1,13 +1,15 @@
 @font-face {
-    font-family: "vdmFont";
-    font-style: normal;
-    font-weight: bold;
-    src: url('./fonts/OpenSans-Regular.ttf');
+  font-display: auto;
+  font-family: 'vdmFont';
+  font-style: normal;
+  font-weight: bold;
+  src: url('./fonts/OpenSans-Regular.ttf');
 }
 
 @font-face {
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-    src: url('./fonts/fontello.ttf');
+  font-display: auto;
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./fonts/fontello.ttf');
 }
