@@ -5,7 +5,7 @@ visibility: visible
 
 member: "Thomas Scharke"
 mainRole: "Software Artist"
-role: "Freelancing Full Stack JavaScript Developer"
+role: "Freelancing & Remote"
 social:
     -
         github: "https://github.com/tscharke"
@@ -13,14 +13,14 @@ social:
         linkedin: "https://linkedin.com/in/tscharke"
         others: "https://www.npmjs.com/package/tscharke"
 experience: "15+ years experience in creating applications for individuals, startups and large corporations."
-description: "Passionate implementer of ideas preferably with TypeScript, JavaScript, ReactNative and React"
+description: "Passionate implementer of ideas preferably with React-Native, TypeScript, JavaScript and React"
 contact: "scharke@van.dermeer.de"
 ---
 ### Tech & Skills
 * TypeScript
 * JavaScript
+* React-Native
 * React
-* React Native
 * Redux
 * Node
 * HTML

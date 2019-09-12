@@ -1,22 +1,35 @@
 import * as React from 'react'
 import { ALL_QUOTES, createObservable } from './helper'
 
+const fadeDelay: number = 2000
+
 interface IProperties {
-  delayAfterQuote: number
+  delay: number
 }
 
-const Quote = ({ delayAfterQuote }: IProperties) => {
+const Quote = ({ delay }: IProperties) => {
   const [message, setMessage] = React.useState(ALL_QUOTES[0])
+  const [classExtension, setClassExtension] = React.useState<string|null>()
 
   React.useEffect(() => {
-    const observable = createObservable(delayAfterQuote, ALL_QUOTES.length)
-    const subscriber = observable.subscribe((index: number) =>
-      setMessage(ALL_QUOTES[index]),
-    )
-    return () => subscriber.unsubscribe()
+    let fadeTimer: any
+    const observable = createObservable(delay, ALL_QUOTES.length)
+    const subscriber = observable.subscribe((index: number) => {
+      setClassExtension('fade')
+      setMessage(ALL_QUOTES[index])
+
+      fadeTimer = setTimeout(() => {
+        setClassExtension(null)
+        clearTimeout(fadeTimer)
+      }, fadeDelay)
+    })
+    return () => {
+      clearTimeout(fadeTimer)
+      subscriber.unsubscribe()
+    }
   }, [])
 
-  return <h1 className="quotes">{message}</h1>
+  return <h1 className={`quotes ${classExtension}`}>{message}</h1>
 }
 
 export default Quote
