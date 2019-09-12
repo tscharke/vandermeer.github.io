@@ -14,6 +14,10 @@ visibility: hidden
 |44795 Bochum |
 |Germany|
 
+## Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:
+
+**DE 306 200 005**
+
 ## Kontakt
 
 |Telefon|49 2102 30 77 074|
