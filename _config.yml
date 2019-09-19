@@ -2,8 +2,8 @@ title: vandermeer
 email: ask@van.dermeer.de
 description: >- # this means to ignore newlines until "baseurl:"
   Passionate implementer of ideas preferably for mobile and web with TypeScript, JavaScript, ReactNative and React
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://van.dermeer.de"
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'https://van.dermeer.de'
 
 twitter:
   username: t_scharke
@@ -43,3 +43,7 @@ header:
     - Redux
     - Mobile
     - Web
+
+  lesehelden:
+    keywords:
+      - Lesehelden

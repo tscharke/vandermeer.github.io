@@ -1,0 +1,81 @@
+---
+---
+
+@import 'properties';
+
+$PADDING: 0.875rem;
+$PADDING_BIG: 2rem;
+$BACKGROUND_COLOR: $COLOR_BLUE;
+$TEXT_COLOR: $COLOR_WHITE;
+
+body {
+  background: $BACKGROUND_COLOR;
+  color: $TEXT_COLOR;
+  margin: $PADDING;
+  padding: 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: normal;
+}
+
+.lesehelden {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: 1rem;
+
+  h1 {
+    align-self: center;
+    font-size: 2.4rem;
+    margin-bottom: $PADDING_BIG;
+  }
+
+  .content {
+    margin-bottom: $PADDING_BIG;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .description {
+    flex: 0.6;
+    text-align: justify;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+  }
+
+  img {
+    flex: 0.3;
+    align-self: start;
+    max-width: 30%;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  .footer {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+
+    a {
+      padding: 0;
+      margin: 0;
+
+      img {
+        flex: 1;
+        height: 6rem;
+        min-height: 6rem;
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
