@@ -3,6 +3,8 @@
 
 @import 'properties';
 
+$BREAKPOINT_PHONE: 414px;
+
 $PADDING: 0.875rem;
 $PADDING_BIG: 2rem;
 $BACKGROUND_COLOR: $COLOR_BLUE;
@@ -31,6 +33,10 @@ body {
     align-self: center;
     font-size: 2.4rem;
     margin-bottom: $PADDING_BIG;
+
+    @media (max-width: $BREAKPOINT_PHONE) {
+      text-align: center;
+    }
   }
 
   .content {
@@ -40,6 +46,11 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    
+    @media (max-width: $BREAKPOINT_PHONE) {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
   }
 
   .description {
@@ -53,6 +64,14 @@ body {
     flex: 0.3;
     align-self: start;
     max-width: 30%;
+
+    @media (max-width: $BREAKPOINT_PHONE) {
+      flex: 1;
+      align-self: center;
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: $PADDING;
+    }
   }
 
   p {
@@ -75,6 +94,12 @@ body {
         min-height: 6rem;
         max-height: 100%;
         max-width: 100%;
+
+        @media (max-width: $BREAKPOINT_PHONE) {
+          min-height: 100%;
+          height: 100%;
+          width: 16rem;
+        }
       }
     }
   }
