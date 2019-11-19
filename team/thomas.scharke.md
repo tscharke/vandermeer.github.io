@@ -8,11 +8,10 @@ mainRole: "Software Artist"
 role: "Freelancing & Remote"
 social:
     -
-        github: "https://github.com/tscharke"
-        twitter: "https://twitter.com/t_scharke"
         linkedin: "https://linkedin.com/in/tscharke"
-        others: "https://www.npmjs.com/package/tscharke"
-experience: "15+ years experience in creating applications for individuals, startups and large corporations."
+        twitter: "https://twitter.com/t_scharke"
+        github: "https://github.com/tscharke"
+experience: "With over 15 years of competence in creating applications for individuals, startups and large corporations, I'm an expert at leading and developing Mobile- and Web-Projects: Apps, SPAs and API-services."
 description: "Passionate implementer of ideas preferably with React-Native, TypeScript, JavaScript and React"
 contact: "scharke@van.dermeer.de"
 ---
