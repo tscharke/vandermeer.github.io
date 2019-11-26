@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Team
+siteTitle: Thomas Scharke - Remote Freelancing Software Artist & Passionate implementer of ideas ❤️ TypeScript | React-Native | React ❤️
 visibility: visible
 
 member: "Thomas Scharke"

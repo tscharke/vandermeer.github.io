@@ -32,17 +32,24 @@ sass:
 header:
   keywords:
     - Freelancer
+    - Freelancing
     - Software Artist
-    - Freelancing Full Stack JavaScript Developer
+    - Full Stack
+    - Developer
     - TypeScript
     - JavaScript
-    - ReactNative
+    - React-Native
+    - React Native
     - React
     - Remote
     - Trainer
-    - Redux
     - Mobile
+    - App
     - Web
+    - SPA
+    - API
+    - Rest
+    - GraphQL
 
   lesehelden:
     keywords:
