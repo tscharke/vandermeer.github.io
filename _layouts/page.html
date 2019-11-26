@@ -16,9 +16,9 @@ layout: default
       <aside>
         <ul>
           {%- for socialLink in page.social -%}
-            {%- for l in socialLink -%}
+            {%- for linkData in socialLink -%}
               <li>
-                <a href="{{ l[1] }}" target="_blank" class="{{ l[0] }}" rel="noopener noreferrer"></a>
+                <a title="{{ linkData[1].title }}" href="{{ linkData[1].url }}" target="_blank" class="{{ linkData[0] }}" rel="noopener noreferrer"></a>
               </li>
             {%- endfor -%}
           {%- endfor -%}

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Team
-siteTitle: Thomas Scharke - Remote Freelancing Software Artist ❤️ TypeScript | React-Native | React ❤️
+siteTitle: Thomas Scharke - Remote Freelaner & Software Artist ❤️ TypeScript | React-Native | React ❤️
 visibility: visible
 
 member: "Thomas Scharke"
@@ -9,9 +9,15 @@ mainRole: "Software Artist"
 role: "Freelancing & Remote"
 social:
     -
-        linkedin: "https://linkedin.com/in/tscharke"
-        twitter: "https://twitter.com/t_scharke"
-        github: "https://github.com/tscharke"
+        linkedin:
+            url: "https://linkedin.com/in/tscharke"
+            title: 'LinkedIn'
+        twitter:
+            url: "https://twitter.com/t_scharke"
+            title: 'Twitter'
+        github:
+            url: "https://github.com/tscharke"
+            title: 'GitHub'
 experience: "With over 15 years of competence in creating applications for individuals, startups and large corporations, I'm an expert at leading and developing Mobile- and Web-Projects: Apps, SPAs and API-services."
 description: "Passionate implementer of ideas preferably with React-Native, TypeScript, JavaScript and React"
 contact: "scharke@van.dermeer.de"
