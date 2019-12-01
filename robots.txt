@@ -5,5 +5,3 @@ Allow: /lesehelden/
 Disallow: /disclaimer
 Disallow: /imprint
 Disallow: /assets/fonts
-Disallow: /lesehelden/impressum
-Disallow: /lesehelden/haftungsausschluss
