@@ -6,8 +6,6 @@
 @import 'properties';
 
 $PADDING: 0.875rem;
-$BACKGROUND_COLOR: $COLOR_GRAY_DARK;
-$TEXT_COLOR: $COLOR_WHITE;
 
 body {
   margin: 0;
@@ -24,13 +22,13 @@ body {
   border: none;
   display: flex;
   flex: 1;
-  background-color: $BACKGROUND_COLOR;
+  background-color: $COLOR_GRAY_LIGHT;
   align-items: center;
   justify-content: flex-end;
   line-height: 3rem;
   padding-left: $PADDING;
   padding-right: $PADDING;
-  @include shadow(0px, 0px, 20px, 10px, $BACKGROUND_COLOR);
+  @include shadow(0px, 0px, 20px, 10px, $COLOR_GRAY_LIGHT);
 
   ul {
     font-size: 1.125rem;
@@ -41,13 +39,13 @@ body {
 }
 
 a {
-  color: $COLOR_WHITE;
+  color: $COLOR_RED;
 
   &:link,
   &:visited,
   &:hover,
   &:active {
-    color: $COLOR_WHITE;
+    color: $COLOR_RED;
     text-decoration: none;
   }
 }
@@ -55,8 +53,8 @@ a {
 .page-content {
   display: flex;
   flex: 1;
-  flex-direction: column;
-  background: $COLOR_GRAY_LIGHT none;
+  flex-direction: row;
+  background-color: $COLOR_WHITE;
 
   &.imprint {
     font-size: 0.75rem;
@@ -195,6 +193,7 @@ a {
         width: 250px;
         max-width: 250px;
         margin: auto;
+        @include shadow(5px, 5px, 20px, 1px, $COLOR_GRAY);
       }
     }
 
@@ -271,12 +270,12 @@ a {
         font-size: 1.25rem;
         color: $COLOR_BLACK;
         font-weight: 900;
-        letter-spacing: 2px;
+        letter-spacing: 5px;
       }
 
       .experience {
         width: 70%;
-        color: $COLOR_GRAY;
+        color: $COLOR_GRAY_DARK;
         letter-spacing: -1px;
         text-align: center;
         font-size: 1.25rem;
