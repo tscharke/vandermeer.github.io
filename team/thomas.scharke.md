@@ -5,8 +5,8 @@ siteTitle: T. Scharke - Freelancer & Software Artist - TypeScript|React Native|R
 visibility: visible
 
 member: "Thomas Scharke"
-mainRole: "Software Artist"
-role: "Freelancing & Remote"
+mainRole: "Freelancing & Remote Software Artist"
+role: "Passionate implementer of ideas"
 social:
     -
         linkedin:
@@ -18,8 +18,10 @@ social:
         github:
             url: "https://github.com/tscharke"
             title: 'GitHub'
-experience: "With over 15 years of competence in creating applications for individuals, startups and large corporations, I'm an expert at leading and developing Mobile- and Web-Projects: Apps, SPAs and API-services."
-description: "Passionate implementer of ideas preferably with React-Native, TypeScript, JavaScript and React"
+experiences:
+    - "With over 20 years of competence in creating applications, I‘m an expert at leading and developing projects for mobile and web (Apps, SPAs, API-services, etc.)."
+    - "I dispose of a deep understanding of the front- and backend, the integration of different systems, the interaction, the product and the communication with stakeholders."
+    - "All this with passion, compassionate and focus of people and products. And in the last 5 years location- and time-independent (#RemoteWork, #NewWork)."
 contact: "scharke@van.dermeer.de"
 ---
 ### Tech & Skills

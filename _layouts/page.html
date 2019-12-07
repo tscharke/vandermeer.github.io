@@ -21,10 +21,14 @@ layout: default
                 <a title="{{ linkData[1].title }}" href="{{ linkData[1].url }}" target="_blank" class="{{ linkData[0] }}" rel="noopener noreferrer"></a>
               </li>
             {%- endfor -%}
+            {%- endfor -%}
+          </ul>
+        </aside>
+        <section class="experience">
+          {%- for experience in page.experiences -%}
+            <p>{{ experience }}</p>
           {%- endfor -%}
-        </ul>
-      </aside>
-      <h3 class="experience ">{{ page.experience }}</h3>
+      </section>
       <div class="description">{{ page.description }}</div>
       <div class="contact">
         <a class="" href="mailto:{{ page.contact }}">{{ page.contact }}</a>
