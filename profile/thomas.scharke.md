@@ -23,6 +23,9 @@ social:
         twitter:
             url: "https://twitter.com/t_scharke"
             title: 'Twitter'
+        linktree:
+            url: "https://linktr.ee/thomas.scharke"
+            title: 'Linktree'
 experiences:
     - "With over 20 years of competence in creating applications, I‘m an expert at leading and developing projects for mobile and web (Apps, SPAs, API-services, etc.)."
     - "I dispose of a deep understanding of the front- and backend, the integration of different systems, the interaction, the product and the communication with stakeholders."
