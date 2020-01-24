@@ -8,13 +8,13 @@
         {%- for path in page_paths -%}
           {%- assign my_page = site.pages | where: "path", path | where: "visibility", "visible" | first -%}
           {%- if my_page.title -%}
-            {% if page.title != 'Team' %}
+            {% if page.title != 'Profile' %}
               <li class="page-link">
                 <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
               </li>
-              {% elsif page.title == 'Team' %}
+              {% elsif page.title == 'Profile' %}
                 <li class="page-link">
-                  <a href="/">Home</a>
+                  <a href="/">vandermeer</a>
                 </li>
             {% endif %}
           {%- endif -%}

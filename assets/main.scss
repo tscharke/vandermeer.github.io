@@ -302,7 +302,7 @@ a {
 
         a {
           color: $COLOR_RED;
-          font-size: 3.125rem;
+          font-size: 2.8rem;
 
           &:link,
           &:visited,
@@ -312,20 +312,28 @@ a {
             text-decoration: none;
           }
 
-          &.github:after {
-            content: '\f300';
+          &.home:after {
+            content: '\E800';
           }
 
           &.linkedin:after {
-            content: '\f30c';
+            content: '\F0E1';
+          }
+
+          &.articles:after {
+            content: '\F15C';
+          }
+
+          &.github:after {
+            content: '\F09B';
+          }
+
+          &.trainings:after {
+            content: '\E802';
           }
 
           &.twitter:after {
-            content: '\f304';
-          }
-
-          &.others:after {
-            content: '\f0c8';
+            content: '\F099';
           }
         }
       }
