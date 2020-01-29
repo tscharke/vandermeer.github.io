@@ -5,7 +5,7 @@
 
   <meta name="author" content="vandermeer" />
   <meta name="keywords" content="{{ site.header.keywords | join: ', ' }}" />
-  <meta name="description" content="{{ site.header.keywords | join: ', ' }}" />
+  <meta name="description" content="We're able to understand our customers' ideas holistically and transform them into sustainable and meaningful digital products.">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/apple-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/apple-icon-60x60.png" />
@@ -26,12 +26,21 @@
   <meta name="theme-color" content="#ffffff" />
   <link rel='mask-icon' href="/assets/safari-pinned-tab.svg" color="#FFFFFF" />
 
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:site" content="{{ site.twitter.username }}"/>
-  <meta name="twitter:title" content="{{ site.title }}" />
-  <meta name="twitter:description" content={{ site.description }}"/>
-  <meta name="twitter:image" content="https://van.dermeer.de/assets/vandermeer.png"/>
-  <meta name="twitter:image:alt" content="{{ site.title }}"/>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{site.url}}">
+  <meta property="og:title" content="PASSIONATE IMPLEMENTER OF IDEAS">
+  <meta property="og:description" content="We're able to understand our customers' ideas holistically and transform them into sustainable and meaningful digital products.">
+  <meta property="og:image" content="{{site.url}}/assets/vandermeer_card.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{site.url}}">
+  <meta property="twitter:title" content="PASSIONATE IMPLEMENTER OF IDEAS">
+  <meta property="twitter:description" content="We're able to understand our customers' ideas holistically and transform them into sustainable and meaningful digital products.">
+  <meta property="twitter:image" content="{{site.url}}/assets/vandermeer_card.png">
+  <meta property="twitter:site" content="{{ site.twitter.username }}"/>
+  <meta property="twitter:image:alt" content="{{ site.title }}"/>
   
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}" media="none" onload="if(media!='all')media='all'">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" media="none" onload="if(media!='all')media='all'">
@@ -41,4 +50,5 @@
   <meta http-equiv="Cache-Control" content="max-age=86400000" />
 
   <title>{{ page.siteTitle || page.title }}</title>
+  <meta name="title" content="{{ page.siteTitle || page.title }}">
 </head>
