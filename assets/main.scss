@@ -16,6 +16,7 @@ body {
   font-size: 16px;
   font-family: 'vdmFont', open-sans, sans-serif;
   font-weight: normal;
+  background-color: $COLOR_WHITE;
 }
 
 .site-header {
@@ -102,20 +103,13 @@ a {
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: center;
   height: calc(100vh - 3rem);
   min-height: calc(100vh - 3rem);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
   .site-content-top {
-    display: flex;
-    height: calc(50% - 3rem);
-    align-items: flex-end;
-    justify-content: center;
-
-    picture {
-      text-align: center;
-    }
-
     img {
       max-width: 90%;
       max-height: 100%;
@@ -123,19 +117,8 @@ a {
   }
 
   .site-content-bottom {
-    height: 50%;
-    display: flex;
-    flex: 1;
-    align-items: flex-start;
-    justify-content: center;
-    padding-top: $PADDING;
-    padding-left: 2rem;
-    padding-right: 2rem;
-
     p {
       &.quote {
-        height: 10rem;
-        min-height: 10rem;
         flex-wrap: wrap;
         word-break: break-word;
         margin: 0;
@@ -145,13 +128,14 @@ a {
         text-transform: uppercase;
         text-align: center;
         min-width: 100%;
-        
+        line-height: 1.1rem;
+
         &.hidden {
           display: none;
         }
-        
+
         @media screen and (max-width: 768px) {
-          font-size: 1rem;
+          font-size: 0.8rem;
         }
       }
     }
@@ -288,6 +272,10 @@ a {
         display: flex;
         flex-direction: row;
         width: 60%;
+        
+        @media screen and (max-width: 768px) {
+          width: 80%;
+        }
 
         ul {
           flex: 1;
@@ -303,7 +291,11 @@ a {
         a {
           color: $COLOR_RED;
           font-size: 2.5rem;
-
+          
+          @media screen and (max-width: 768px) {
+            font-size: 2rem;
+          }
+  
           &:link,
           &:visited,
           &:hover,
