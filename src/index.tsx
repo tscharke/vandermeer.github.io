@@ -1,4 +1,4 @@
-const INTERVAL_IN_MS = 8000
+const INTERVAL_IN_MS = 5000
 
 ;(() => {
   const allElements = document.querySelectorAll('p.quote')
