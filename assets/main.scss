@@ -63,13 +63,14 @@ a {
   flex: 1;
   flex-direction: row;
   background-color: $COLOR_WHITE;
-
+  
   &.imprint {
     font-size: 0.75rem;
     height: 100%;
     min-height: 100vh;
     font-family: 'vdmFont', open-sans, sans-serif;
     font-weight: normal;
+    flex-direction: column;
 
     h1,
     h2 {
