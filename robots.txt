@@ -3,5 +3,7 @@ Sitemap: https://van.dermeer.de/sitemap.xml
 Allow: /
 Allow: /lesehelden/
 Disallow: /disclaimer
+Disallow: /datenschutzerklaerung
 Disallow: /imprint
+Disallow: /impressum
 Disallow: /assets/fonts
