@@ -4,7 +4,7 @@ title: Profile
 siteTitle: Thomas Scharke - Software Artist|Trainer|Freelancer|Distributed Worker
 visibility: visible
 member: "Thomas Scharke"
-mainRole: "Software Artist • Trainer"
+mainRole: "Software Artist • Trainer • Freelancer • Distributed Worker"
 role: "Passionate implementer of ideas"
 social:
     -
