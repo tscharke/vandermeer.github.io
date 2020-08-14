@@ -27,12 +27,13 @@ body {
   align-items: center;
   justify-content: flex-end;
   line-height: 3rem;
-  padding-left: $PADDING;
-  padding-right: $PADDING;
   @include shadow(0px, 0px, 20px, 10px, $COLOR_GRAY_LIGHT);
   @include isIPhoneX() {
     line-height: 2rem;
   }
+  position: fixed;
+  top: 0;
+  width: 100vw;
 
   ul {
     font-size: 1.125rem;
@@ -43,6 +44,10 @@ body {
     @include isIPhoneX() {
       font-size: 0.75rem;
     }
+  }
+
+  .site-nav {
+    padding: 0 $PADDING;
   }
 }
 
@@ -63,7 +68,7 @@ a {
   flex: 1;
   flex-direction: row;
   background-color: $COLOR_WHITE;
-  
+
   &.imprint {
     font-size: 0.75rem;
     height: 100%;
@@ -170,13 +175,14 @@ a {
     height: 100%;
     min-height: 100%;
     max-height: 100%;
-  
+
     .member {
       flex-direction: column;
       display: flex;
       flex: 1;
       justify-content: flex-start;
       align-items: center;
+      margin-top: calc(var(--HEADER-HEIGHT) + 10px);
 
       h1 {
         display: flex;
