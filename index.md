@@ -1,5 +1,5 @@
 ---
 layout: home
 visibility: visible
-siteTitle: vandermeer
+siteTitle: vandermeer - Software Artists (Freelancer, React, TypeScript)
 ---

@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Profile
-siteTitle: Thomas Scharke - Software Artist|Trainer|Freelancer|Distributed Worker
+siteTitle: Thomas Scharke - Software Artist
 visibility: visible
 member: "Thomas Scharke"
-mainRole: "Software Artist • Trainer • Freelancer • Distributed Worker"
+mainRole: "Software Artist • Freelancer • Trainer • Guide • Digital Nomad"
 role: "Passionate implementer of ideas"
 social:
     -
@@ -31,6 +31,7 @@ experiences:
     - "I dispose of a deep understanding of the front- and backend, the integration of different systems, the interaction, the product and the communication with stakeholders."
     - "All this with passion, compassionate and focus of people and products. And in the last 5 years location- and time-independent (#DistributedWork, #RemoteWork, #NewWork)."
 contact: "scharke@van.dermeer.de"
+externalURI: https://thomas-scharke.de/
 ---
 ### Tech & Skills
 * TypeScript

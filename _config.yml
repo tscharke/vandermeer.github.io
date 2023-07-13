@@ -1,4 +1,4 @@
-title: vandermeer
+title: vandermeer - Software Artists (Freelancer, React, TypeScript)
 email: ask@van.dermeer.de
 description: >- # this means to ignore newlines until "baseurl:"
   Passionate implementer of ideas preferably for mobile and web with TypeScript, JavaScript, ReactNative and React
@@ -34,13 +34,22 @@ header:
     - Freelancer
     - Software Artist
     - Full Stack
+    - Full-Stack
     - Developer
     - TypeScript
     - JavaScript
-    - React Native
     - React
-    - Remote
+    - React Native
+    - CSS
+    - SCSS
+    - Tailwind
+    - TailwindCSS
     - Trainer
+    - Mentor
+    - Guide
+    - Digital Nomad
+    - Backend
+    - Frontend
     - Mobile
     - App
     - Web
@@ -48,6 +57,9 @@ header:
     - API
     - Rest
     - GraphQL
+    - JSON
+    - JSON-RPC
+    - SOAP
 
   lesehelden:
     keywords:
