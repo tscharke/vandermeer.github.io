@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {%- include head.html -%}
-  <body>
+  <body class="font-vdm text-base flex flex-col bg-white w-screen h-screen">
     {%- include header.html -%}
-    <main class="page-content" aria-label="Content">
+    <main class="absolute flex flex-row w-screen h-screen justify-center z-0" aria-label="Content">
       {{ content }}
     </main>
   </body>

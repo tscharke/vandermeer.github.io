@@ -2,38 +2,36 @@
 layout: default
 ---
 
-<div class="site-content">
-  <div class="site-content-top">
-    <picture>
-      <source
-        srcset="
-          assets/vandermeer.webp    1x,
-          assets/vandermeer@2x.webp 2x,
-          assets/vandermeer@3x.webp 3x
-        "
-        type="image/webp"
-      />
-      <source
-        srcset="
-          assets/vandermeer.jp2    1x,
-          assets/vandermeer@2x.jp2 2x,
-          assets/vandermeer@3x.jp2 3x
-        "
-        type="image/jp2"
-      />
-      <img
-        src="/assets/vandermeer.png"
-        srcset="
-          /assets/vandermeer@3x.png 3x,
-          /assets/vandermeer@2x.png 2x,
-          /assets/vandermeer.png    1x
-        "
-        title="vandermeer - Software Artists (Freelancer, React, TypeScript)"
-        alt="vandermeer - Software Artists (Freelancer, React, TypeScript)"
-      />
-    </picture>
-  </div>
-  <section class="site-content-bottom">
+<div class="flex flex-col justify-center items-center sm:mx-6 mx-4 gap-2">
+  <picture>
+    <source
+      srcset="
+        assets/vandermeer.webp    1x,
+        assets/vandermeer@2x.webp 2x,
+        assets/vandermeer@3x.webp 3x
+      "
+      type="image/webp"
+    />
+    <source
+      srcset="
+        assets/vandermeer.jp2    1x,
+        assets/vandermeer@2x.jp2 2x,
+        assets/vandermeer@3x.jp2 3x
+      "
+      type="image/jp2"
+    />
+    <img
+      src="/assets/vandermeer.png"
+      srcset="
+        /assets/vandermeer@3x.png 3x,
+        /assets/vandermeer@2x.png 2x,
+        /assets/vandermeer.png    1x
+      "
+      title="{{page.siteTitle}}"
+      alt="{{page.siteTitle}}"
+    />
+  </picture>
+  <section class="w-full flex flex-row justify-center text-center sm:text-3xl text-xl break-words flex-wrap text-red tracking-[3px] uppercase">
     <p class="quote animated heartBeat">
       Passionate implementer of ideas for mobile and web.
     </p>

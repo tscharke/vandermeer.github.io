@@ -1,0 +1,50 @@
+---
+---
+
+@tailwind base;
+@tailwind components;
+@font-face {
+    font-family: "vdm";
+    src: url("./fonts/OpenSans-Regular.ttf");
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+}
+@tailwind utilities;
+
+@layer base {
+    a {
+        @apply text-red;
+        @apply cursor-pointer
+    }
+
+    .imprint h1 {
+        @apply text-2xl;
+    }
+
+    .imprint h2 {
+        @apply text-xl;
+    }
+
+    .imprint table {
+        @apply table-fixed;
+    }
+
+    .imprint table td:first-child {
+        width: 2rem;
+    }
+
+    .imprint table td {
+        width: 8rem;
+    }
+
+    .imprint strong {
+        @apply mb-3;
+        display: inline-block;
+    }
+
+    .imprint ul {
+        list-style: inside;
+        @apply ml-3;
+    }
+}

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {%- include head.html -%}
-  <body>
-    <main class="page-content imprint" aria-label="Content">
+  <body class="font-vdm text-xs flex flex-col bg-white w-screen h-screen">
+    <main aria-label="Content" class='flex flex-col gap-2 imprint'>
       {{ content }}
     </main>
   </body>
