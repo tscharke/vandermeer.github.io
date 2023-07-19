@@ -1,27 +1,14 @@
 <header class="flex bg-gray-200 items-center justify-end leading-3 sm:leading-12 px-3.5 shadow shadow-gray-200 z-10" role="banner">
   {%- assign default_paths = site.pages | map: "path" -%}
   {%- assign page_paths = site.header_pages | default: default_paths -%}
-
   {%- if page_paths -%}
     <nav>
       <ul class='sm:text-xl text-xs sm:leading-12 leading-12'>
         {%- for path in page_paths -%}
           {%- assign my_page = site.pages | where: "path", path | where: "visibility", "visible" | first -%}
-          {%- if my_page.title -%}
-            {% if page.title != 'Profile' %}
-              <li>
-              {% if my_page.externalURI %}
-                <a href="{{ my_page.externalURI }}" target="_blank" title='Link to my profile'>{{ my_page.title | escape }}</a>
-              {% else %}
-                <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-              {% endif %}
-              </li>
-              {% elsif page.title == 'Profile' %}
-                <li>
-                  <a href="/">vandermeer</a>
-                </li>
-            {% endif %}
-          {%- endif -%}
+          {% if my_page.externalURI %}
+            <a href="{{ my_page.externalURI }}" target="_blank" title='Link to my profile'>{{ my_page.externalURITitle | escape }}</a>
+          {% endif %}
         {%- endfor -%}
       </ul>
     </nav>
