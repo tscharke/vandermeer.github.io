@@ -27,7 +27,8 @@
   },
   "scripts": {
     "prestart": "npm-run-all build:js",
-    "start": "bundle exec jekyll serve --livereload",
+    "start": "bundle exec jekyll serve",
+    "start:dev": "bundle exec jekyll serve --livereload",
     "build:js": "webpack"
   },
   "dependencies": {
