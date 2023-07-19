@@ -3,7 +3,7 @@ name: Build and deploy this site to GitHub-Pages
 on:
   push:
     branches:
-      - features/tailwind
+      - master
 
 jobs:
   github-pages:
@@ -25,7 +25,7 @@ jobs:
           enable_cache: true
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/features/tailwind'
+        if: github.ref == 'refs/heads/master'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
