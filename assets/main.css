@@ -1,105 +1,63 @@
 ---
 ---
 
-@import 'fonts';
-@import 'methods';
-@import 'properties';
+@tailwind base;
+@tailwind components;
+@font-face {
+    font-family: "vdm";
+    src: url("./fonts/OpenSans-Regular.ttf");
+    font-display: swap;
+    font-style: normal;
+    font-weight: normal;
+}
+@tailwind utilities;
 
+@layer base {
+    a {
+        @apply text-red;
+        @apply cursor-pointer
+    }
+
+    .imprint h1 {
+        @apply text-2xl;
+    }
+
+    .imprint h2 {
+        @apply text-xl;
+    }
+
+    .imprint table {
+        @apply table-fixed;
+    }
+
+    .imprint table td:first-child {
+        width: 2rem;
+    }
+
+    .imprint table td {
+        width: 8rem;
+    }
+
+    .imprint strong {
+        @apply mb-3;
+        display: inline-block;
+    }
+
+    .imprint ul {
+        list-style: inside;
+        @apply ml-3;
+    }
+}
+/*
 $PADDING: 0.875rem;
 
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  font-size: 16px;
-  font-family: 'vdmFont', open-sans, sans-serif;
-  font-weight: normal;
-  background-color: $COLOR_WHITE;
-  // width: 100vw;
-  // height: 100vh;
-}
-
 .site-header {
-  border: none;
-  display: flex;
-  flex: 1;
-  background-color: $COLOR_GRAY_LIGHT;
-  align-items: center;
-  justify-content: flex-end;
-  line-height: 3rem;
-  @include shadow(0px, 0px, 20px, 10px, $COLOR_GRAY_LIGHT);
-  @include isIPhoneX() {
-    line-height: 2rem;
-  }
   position: fixed;
   top: 0;
   width: 100vw;
-
-  ul {
-    font-size: 1.125rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    @include isIPhoneX() {
-      font-size: 0.75rem;
-    }
-  }
-
-  .site-nav {
-    padding: 0 $PADDING;
-  }
-}
-
-a {
-  color: $COLOR_RED;
-
-  &:link,
-  &:visited,
-  &:hover,
-  &:active {
-    color: $COLOR_RED;
-    text-decoration: none;
-  }
 }
 
 .page-content {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  background-color: $COLOR_WHITE;
-
-  &.imprint {
-    font-size: 0.75rem;
-    height: 100%;
-    min-height: 100vh;
-    font-family: 'vdmFont', open-sans, sans-serif;
-    font-weight: normal;
-    flex-direction: column;
-
-    h1,
-    h2 {
-      padding: 0;
-      margin: 0;
-    }
-
-    p {
-      display: flex;
-      flex-direction: column;
-
-      strong {
-        font-size: 0.85rem;
-        line-height: 1.25rem;
-      }
-    }
-
-    table {
-      margin-top: $PADDING;
-      margin-bottom: $PADDING;
-    }
-
     a {
       color: $COLOR_RED;
 
@@ -120,53 +78,13 @@ a {
     --HEADER-HEIGHT: 6rem;
   }
 
-  display: flex;
-  flex: 1;
-  flex-direction: column;
   height: calc(100vh - var(--HEADER-HEIGHT));
   min-height: calc(100vh - var(--HEADER-HEIGHT));
   max-height: calc(100vh - var(--HEADER-HEIGHT));
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 
   @include isIPhoneX() {
     min-height: 100%;
     max-height: 100%;
-  }
-
-  .site-content-top {
-    img {
-      max-width: 90%;
-      max-height: 100%;
-    }
-  }
-
-  .site-content-bottom {
-    p {
-      &.quote {
-        flex-wrap: wrap;
-        word-break: break-word;
-        margin: 0;
-        padding: 0;
-        color: $COLOR_RED;
-        font-size: 1.5rem;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        text-align: center;
-        line-height: 1.7rem;
-        width: 100%;
-        display: inline-block;
-
-        &.hidden {
-          display: none;
-        }
-
-        @include isIPhoneX() {
-          width: 80%;
-        }
-      }
-    }
   }
 
   &.team {
@@ -395,3 +313,4 @@ a {
     }
   }
 }
+*/

@@ -10,7 +10,6 @@ twitter:
   card: summary
 
 markdown: kramdown
-theme: minima
 
 exclude:
   - vdm-home.iml
@@ -24,10 +23,6 @@ exclude:
   - tsconfig.json
   - webpack.config.js
   - yarn.lock
-
-sass:
-  sass_dir: _saas
-  style: compressed
 
 header:
   keywords:
@@ -64,3 +59,9 @@ header:
   lesehelden:
     keywords:
       - Lesehelden
+
+plugins:
+  - jekyll-postcss
+
+postcss:
+  cache: false
