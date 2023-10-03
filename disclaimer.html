@@ -43,12 +43,10 @@
   <meta property="twitter:site" content="t_scharke"/>
   <meta property="twitter:image:alt" content="vandermeer - Software Artists (Freelancer, React, TypeScript)"/>
 
-  <link rel="stylesheet" href="/assets/main.css" media="none" onload="if(media!='all')media='all'">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" media="none" onload="if(media!='all')media='all'">
+  <link rel="preload" href="/assets/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/main.css"></noscript>
 
-  <meta http-equiv="Cache-Control" content="public" />
-  <meta http-equiv="Expires" content="86400000" />
-  <meta http-equiv="Cache-Control" content="max-age=86400000" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" media="none" onload="if(media!='all')media='all'">
 
   <title></title>
   <meta name="title" content="">

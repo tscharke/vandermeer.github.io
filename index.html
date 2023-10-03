@@ -43,12 +43,10 @@
   <meta property="twitter:site" content="t_scharke"/>
   <meta property="twitter:image:alt" content="vandermeer - Software Artists (Freelancer, React, TypeScript)"/>
 
-  <link rel="stylesheet" href="/assets/main.css" media="none" onload="if(media!='all')media='all'">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" media="none" onload="if(media!='all')media='all'">
+  <link rel="preload" href="/assets/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/main.css"></noscript>
 
-  <meta http-equiv="Cache-Control" content="public" />
-  <meta http-equiv="Expires" content="86400000" />
-  <meta http-equiv="Cache-Control" content="max-age=86400000" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" media="none" onload="if(media!='all')media='all'">
 
   <title>vandermeer - Software Artists (Freelancer, React, TypeScript)</title>
   <meta name="title" content="vandermeer - Software Artists (Freelancer, React, TypeScript)">
@@ -58,7 +56,9 @@
 </head>
 <body class="font-vdm text-base flex flex-col bg-white w-screen h-screen"><header class="flex bg-gray-200 items-center justify-end leading-3 sm:leading-12 px-3.5 shadow shadow-gray-200 z-10" role="banner"><nav>
       <ul class='sm:text-xl text-xs sm:leading-12 leading-12'>
+          <li>
             <a href="https://thomas-scharke.de/" target="_blank" title='Link to my profile'>Profile</a>
+          </li>
           </ul>
     </nav></header>
 <main class="absolute flex flex-row w-screen h-screen justify-center z-0" aria-label="Content">
@@ -66,29 +66,31 @@
   <picture>
     <source
       srcset="
-        assets/vandermeer.webp    1x,
-        assets/vandermeer@2x.webp 2x,
-        assets/vandermeer@3x.webp 3x
+        assets/vandermeer.webp    1x 1336w,
+        assets/vandermeer@2x.webp 2x 2674w,
+        assets/vandermeer@3x.webp 3x 4010w
       "
       type="image/webp"
     />
     <source
       srcset="
-        assets/vandermeer.jp2    1x,
-        assets/vandermeer@2x.jp2 2x,
-        assets/vandermeer@3x.jp2 3x
+        assets/vandermeer.jp2    1x 1336w,
+        assets/vandermeer@2x.jp2 2x 2674w,
+        assets/vandermeer@3x.jp2 3x 4010w
       "
       type="image/jp2"
     />
     <img
       src="/assets/vandermeer.png"
       srcset="
-        /assets/vandermeer@3x.png 3x,
-        /assets/vandermeer@2x.png 2x,
-        /assets/vandermeer.png    1x
+        /assets/vandermeer@3x.png 3x 1336w,
+        /assets/vandermeer@2x.png 2x 2674w,
+        /assets/vandermeer.png    1x 4010w
       "
       title="vandermeer - Software Artists (Freelancer, React, TypeScript)"
       alt="vandermeer - Software Artists (Freelancer, React, TypeScript)"
+      width='1336'
+      height='202'
     />
   </picture>
   <section class="w-full flex flex-row justify-center text-center sm:text-3xl text-xl break-words flex-wrap text-red tracking-[3px] uppercase">
