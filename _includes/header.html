@@ -7,7 +7,9 @@
         {%- for path in page_paths -%}
           {%- assign my_page = site.pages | where: "path", path | where: "visibility", "visible" | first -%}
           {% if my_page.externalURI %}
+          <li>
             <a href="{{ my_page.externalURI }}" target="_blank" title='Link to my profile'>{{ my_page.externalURITitle | escape }}</a>
+          </li>
           {% endif %}
         {%- endfor -%}
       </ul>
