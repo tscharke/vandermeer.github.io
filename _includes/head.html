@@ -42,12 +42,10 @@
   <meta property="twitter:site" content="{{ site.twitter.username }}"/>
   <meta property="twitter:image:alt" content="{{ site.title }}"/>
 
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}" media="none" onload="if(media!='all')media='all'">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" media="none" onload="if(media!='all')media='all'">
+  <link rel="preload" href="{{ "/assets/main.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}"></noscript>
 
-  <meta http-equiv="Cache-Control" content="public" />
-  <meta http-equiv="Expires" content="86400000" />
-  <meta http-equiv="Cache-Control" content="max-age=86400000" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" media="none" onload="if(media!='all')media='all'">
 
   <title>{{ page.siteTitle || page.title }}</title>
   <meta name="title" content="{{ page.siteTitle || page.title }}">
