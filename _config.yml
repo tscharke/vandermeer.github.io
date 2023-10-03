@@ -65,3 +65,7 @@ plugins:
 
 postcss:
   cache: false
+
+webrick:
+  headers:
+    Cache-Control: public, max-age=31557600000
